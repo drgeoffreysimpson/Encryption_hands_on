@@ -1,0 +1,88 @@
+#User ignored files
+gts_public_key.pem
+
+# ==========================================
+# Byte-compiled / optimized / DLL files
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ==========================================
+# Virtual Environments
+# ==========================================
+.venv/
+venv/
+ENV/
+env/
+editable_venv/
+.python-version
+
+# ==========================================
+# Secrets, Credentials, & Environment Configurations
+# ==========================================
+.env
+.env.*
+.secrets
+*.pem
+*.key
+
+# ==========================================
+# Project Build & Distribution outputs
+# ==========================================
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# Testing, Coverage, & Code Quality
+# ==========================================
+htmlcov/
+.tox/
+.nosetests
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ==========================================
+# Jupyter Notebooks & Data Science
+# ==========================================
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# ==========================================
+# IDEs and Editors
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ==========================================
+# Operating System files
+# ==========================================
+.DS_Store
+Thumbs.db

@@ -32,6 +32,12 @@ def load_public_key_from_file(keyname):
 
     return publickey
 
+def load_private_key_from_file(keyname):
+    with open(keyname + "_private_key.pem", "rb") as private_key_file:
+        privateKey = rsa.PrivateKey.load_pkcs1(private_key_file.read())
+
+    return privateKey
+
 
 if __name__ =="__main__":
     #Example #1, create a public/private key and use it to encrypt/decrypt
@@ -58,7 +64,6 @@ if __name__ =="__main__":
 
     #the message gets encrypted righ here.
     encrypted_message = encryptor.update(plaintext) + encryptor.finalize()
-    
 
     #now we are going to do the reverse and decrypt the message
     decrpytor = cipher.decryptor()
@@ -76,5 +81,3 @@ if __name__ =="__main__":
     decryptedtext = rsa.decrypt(ciphertext, myprivatekey)
     assert(plaintext == decryptedtext)
     print(decryptedtext)
-
-
